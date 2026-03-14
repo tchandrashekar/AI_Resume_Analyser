@@ -91,7 +91,7 @@ MySQL Database
 POST /resume/upload
 
 **Description:**
-Uploads a resume and returns ATS analysis.
+Uploads a resume and returns ATS analysis
 
 **Response Example**
 
