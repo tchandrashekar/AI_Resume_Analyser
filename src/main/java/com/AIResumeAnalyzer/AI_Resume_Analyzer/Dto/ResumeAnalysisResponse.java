@@ -9,6 +9,6 @@ import java.util.List;
 public class ResumeAnalysisResponse {
     private List<String> skills;
     private int score;
-    private List<String> suggestions;
+    private String suggestions;
 
 }

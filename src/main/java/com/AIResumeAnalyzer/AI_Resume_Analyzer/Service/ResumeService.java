@@ -34,7 +34,7 @@ public class ResumeService {
 
         int score = atsScoreService.calculateScore(skills,text);
 
-        List<String> suggestions = aiService.generateSuggestions();
+        String suggestions = aiService.generateSuggestions(text);
 
         ResumeAnalysis entity = new ResumeAnalysis(
                 file.getOriginalFilename(),

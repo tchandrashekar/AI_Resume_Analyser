@@ -15,6 +15,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/resume")
 public class ResumeController {
+
+    @Autowired
+    private AiService aiService;
     @Autowired
     private ResumeService resumeService;
     @Autowired
@@ -59,7 +62,7 @@ public class ResumeController {
 
         int score =jobMatchService.calculateMatchScore(matchedSkills, jobSkills);
         int atsScore =  atsScoreService.calculateScore(resumeSkills, resumeText);
-
+        String suggestions = aiService.analyzeResume(resumeText,jobDescription);
 
         ResumeAnalysis analysis = new ResumeAnalysis();
 
@@ -74,6 +77,6 @@ public class ResumeController {
         resumeRepository.save(analysis);
 
 
-        return new JobMatchResponse(matchedSkills, score);
+        return new JobMatchResponse(matchedSkills, score,suggestions);
     }
 }

@@ -10,4 +10,5 @@ import java.util.List;
 public class JobMatchResponse {
     private List<String> matchedskills;
     private int matchScore;
+    private String suggestions;
 }
