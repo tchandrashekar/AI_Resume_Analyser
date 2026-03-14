@@ -133,6 +133,3 @@ Returns stored resume analyses.
 ---
 
 
-## 📸 Screenshots 
-
-
