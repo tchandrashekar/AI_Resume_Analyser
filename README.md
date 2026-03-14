@@ -73,13 +73,21 @@ This project demonstrates **full-stack development with AI integration**, combin
 ## 🧠 System Architecture
 
 React Frontend
+
 ⬇
+
 Spring Boot REST API
+
 ⬇
+
 Resume Service
+
 ⬇
+
 AI Service (Ollama + TinyLlama)
+
 ⬇
+
 MySQL Database
 
 ---
